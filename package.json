@@ -14,7 +14,7 @@
     "test": "jest",
     "check": "yarn run lint && yarn run test && dependency-check package.json --entry src",
     "prebuild": "yarn run check -s && yarn run clean -s",
-    "build": "babel --optional runtime src -d dist --copy-files --ignore src/__tests__",
+    "build": "babel --optional runtime types -d dist --copy-files --ignore src/__tests__",
     "prepublish": "yarn run build",
     "postpublish": "git push origin master --follow-tags"
   },
@@ -56,13 +56,13 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
-    "jest": "^19.0.2",
+    "jest": "^22",
     "prop-types": "^15.5.8",
-    "react": "^15.5.4",
-    "react-dom": "^15.5.4",
-    "react-test-renderer": "^15.5.4",
+    "react": "^16",
+    "react-dom": "^16",
+    "react-test-renderer": "^16",
     "rimraf": "^2.6.1",
-    "typescript": "^2.2.2",
+    "typescript": "^2.6",
     "watch": "^1.0.2"
   },
   "dependencies": {
