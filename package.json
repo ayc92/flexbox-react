@@ -43,7 +43,7 @@
     "prop-types": "*",
     "react": "*",
     "react-dom": "*",
-    "babel-eslint": "*"
+    "babel": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
