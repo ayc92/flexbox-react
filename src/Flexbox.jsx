@@ -38,7 +38,7 @@ const Flexbox = styled(({
   ${props => (props.alignContent ? `align-content: ${props.alignContent};` : '')}
   ${props => (props.alignSelf ? `align-self: ${props.alignSelf};` : '')}
   ${props => (props.alignItems ? `align-items: ${props.alignItems};` : '')}
-  ${props => (props.display ? `display: ${props.display};` : '')}
+  ${props => (props.display ? `display: ${props.display};` : null)}
   ${props => (props.flex ? `flex: ${props.flex};` : '')}
   ${props => (props.flexBasis ? `flex-basis: ${props.flexBasis};` : '')}
   ${props => (props.flexDirection ? `flex-direction: ${props.flexDirection};` : '')}
@@ -77,7 +77,7 @@ Flexbox.propTypes = {
   alignItems: PropTypes.oneOf(['baseline', 'center', 'flex-end', 'flex-start', 'stretch']),
   alignSelf: PropTypes.oneOf(['baseline', 'center', 'flex-end', 'flex-start', 'stretch']),
   children: PropTypes.node,
-  display: PropTypes.oneOf(['flex', 'inline-flex']),
+  display: PropTypes.oneOf(['flex', 'inline-flex', null]),
   element: PropTypes.oneOf([
     'article',
     'aside',
