@@ -15,7 +15,8 @@
     "check": "yarn run lint && yarn run test && dependency-check package.json --entry src",
     "prebuild": "yarn run check -s && yarn run clean -s",
     "build": "babel --optional runtime src -d dist --copy-files --ignore src/__tests__",
-    "postinstall": "yarn run build",
+    "postinstall_build": "babel --optional runtime src -d dist --copy-files --ignore src/__tests__",
+    "postinstall": "yarn postinstall_build",
     "prepublish": "yarn run build",
     "postpublish": "git push origin master --follow-tags"
   },
