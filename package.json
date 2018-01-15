@@ -15,8 +15,6 @@
     "check": "yarn run lint && yarn run test && dependency-check package.json --entry src",
     "prebuild": "yarn run check -s && yarn run clean -s",
     "build": "babel --optional runtime src -d dist --copy-files --ignore src/__tests__",
-    "postinstall_build": "babel --optional runtime src -d dist --copy-files --ignore src/__tests__",
-    "postinstall": "yarn run postinstall_build",
     "prepublish": "yarn run build",
     "postpublish": "git push origin master --follow-tags"
   },
@@ -42,8 +40,7 @@
   "peerDependencies": {
     "prop-types": "*",
     "react": "*",
-    "react-dom": "*",
-    "babel-cli": "*"
+    "react-dom": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
