@@ -41,7 +41,8 @@
   "peerDependencies": {
     "prop-types": "*",
     "react": "*",
-    "react-dom": "*"
+    "react-dom": "*",
+    "babel-eslint": "*"
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
