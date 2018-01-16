@@ -65,7 +65,7 @@ var Flexbox = (0, _styledComponents2.default)(function (_ref) {
 }, function (props) {
   return props.alignItems ? 'align-items: ' + props.alignItems + ';' : '';
 }, function (props) {
-  return props.display ? 'display: ' + props.display + ';' : null;
+  return props.display ? 'display: ' + props.display + ';' : '';
 }, function (props) {
   return props.flex ? 'flex: ' + props.flex + ';' : '';
 }, function (props) {
@@ -121,7 +121,7 @@ Flexbox.propTypes = {
   alignItems: _propTypes2.default.oneOf(['baseline', 'center', 'flex-end', 'flex-start', 'stretch']),
   alignSelf: _propTypes2.default.oneOf(['baseline', 'center', 'flex-end', 'flex-start', 'stretch']),
   children: _propTypes2.default.node,
-  display: _propTypes2.default.oneOf(['flex', 'inline-flex', null]),
+  display: _propTypes2.default.oneOf(['block', 'flex', 'inline-flex']),
   element: _propTypes2.default.oneOf(['article', 'aside', 'div', 'figure', 'footer', 'header', 'main', 'nav', 'section']),
   flex: _propTypes2.default.string,
   flexBasis: _propTypes2.default.string,
